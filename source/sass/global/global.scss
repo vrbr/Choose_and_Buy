@@ -1,5 +1,28 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+body {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0;
+    align-content: start;
+    font-family: 'Manrope', Arial, sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    color: #000;
+}
 img {
     max-width: 100%;
+    border-style: none;
+}
+img {
+    max-width: 100%;
+    border-style: none;
 }
 .visually-hidden {
     position: absolute;
@@ -14,5 +37,26 @@ img {
     overflow: hidden;
 }
 a {
+    background-color: transparent;
     text-decoration: none;
+    color: inherit;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 0;
+}
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  margin: 0;
+}
+.no-scroll {
+    overflow: hidden;
+}
+
+/* progect */

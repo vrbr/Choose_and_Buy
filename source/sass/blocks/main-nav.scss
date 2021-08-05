@@ -1,0 +1,131 @@
+.main-nav {
+    margin-top: -70px;
+    &__item {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        a {
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    &.main-nav--closed {
+        .main-nav__toggle::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 2px;
+            background-color: #fff;
+            box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+        }
+    }
+    &__toggle {
+        position: absolute;
+        display: block;
+        top: 21px;
+        right: 7.5%;
+        width: 24px;
+        height: 18px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    &__card {
+        img, span {
+            display: none;
+        }
+    }
+}
+@media (max-width: $mobile-width-only) {
+    .main-nav--closed .main-nav__item {
+        display: none;
+    }
+    .main-nav--nojs .main-nav__toggle {
+        display: none;
+    }
+    .main-nav--nojs .main-nav__wrapper {
+        position: static;
+        min-height: 0;
+    }
+    .main-nav--nojs .main-nav__item {
+        display: block;
+    }
+}
+.main-nav--opened .main-nav__toggle {
+    top: 22px;
+    right: 22px;
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        top: 6px;
+        left: -1px;
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+    }
+    &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+@media (min-width: $tablet-width) {
+    .main-nav {
+        position: absolute;
+        top: 0px;
+        margin-top: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+        width: 100%;
+        &__toggle {
+            display: none;
+        }
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__list {
+            display: flex;
+        }
+        &__item {
+            padding: 0;
+            a {
+                font-size: 15px;
+                color: #fff;
+            }
+            &:not(:last-of-type) {
+                padding-right: 15px;
+            }
+            &--current {
+                a {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+        &__card {
+            img, span {
+                display: block;
+            }
+            &-img {
+                position: relative;
+                span {
+                    position: absolute;
+                    top: -6px;
+                    right: -5px;
+                }
+            }
+        }
+    }
+    .main-nav__card {
+        .main-nav__card-text {
+            display: none;
+        }
+    }
+}

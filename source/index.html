@@ -4,13 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choose&Buy - інтернет-магазин аксесуарів для смартфонів">
+    <meta name="keywords" content="мобільні аксесуари">
+    <meta property="og:title" content="Choose&Buy - інтернет-магазин аксесуарів для смартфонів" />
+    <meta property="og:description" content="Choose&Buy - інтернет-магазин аксесуарів для смартфонів" />
+    <meta property="og:image" content="img/" />
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>Choose&Buy</title>
 </head>
-<body>
+<body class="body">
 
     <header class="header">
-        <h1>Заголовок</h1>
+        <div class="header__logo-wrapper">
+            <a href="" class="header__logo">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/header/logo-desk.svg">
+                    <source media="(min-width: 768px)" srcset="img/header/logo-tab.svg">
+                    <img src="img/header/logo-mob.svg" alt="Логотип Choose&Buy" width="120" height="32">
+                </picture>
+            </a>
+            <a href="" class="header__card">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/header/card-tab.svg">
+                    <img src="img/header/card-mob.svg" alt="">
+                </picture>
+                <span>
+                    <picture>
+                        <img src="img/header/card-check-mob.svg" alt="">
+                    </picture>
+                </span>
+            </a>
+        </div>
+        <div class="header__bg">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/header/honey-desk@1x.png 1x, img/header/honey-desk@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/header/honey-tab@1x.png 1x, img/header/honey-tab@2x.png 2x">
+                <img src="img/header/honey-mob@1x.png" srcset="img/header/honey-mob@2x.png" alt="">
+            </picture>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Відкрити або закрити меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list main-nav__list-left">
+                    <li class="main-nav__item main-nav__item--current">
+                        <a>Головна</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Контакти</a>
+                    </li>
+                </ul>
+                <ul class="main-nav__list main-nav__list-right">
+                    <li class="main-nav__item">
+                        <a href="#">Про нас</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Оплата і доставка</a>
+                    </li>
+                    <li class="main-nav__item main-nav__card">
+                        <a href="#" class="main-nav__card-text">Кошик</a>
+                        <a href="#" class="main-nav__card-img">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="img/header/card-tab.svg">
+                                <img src="img/header/card-mob.svg" alt="">
+                            </picture>
+                            <span>
+                                <picture>
+                                    <img src="img/header/card-check-mob.svg" alt="">
+                                </picture>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <!-- + другие js -->
