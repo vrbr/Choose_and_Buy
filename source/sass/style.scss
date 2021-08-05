@@ -1,0 +1,14 @@
+// Global
+
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+
+// Blocks
+//подключение модулей
+
+// @import "blocks/additionally.scss";
+// @import "blocks/catalog.scss";
+// @import "blocks/cats.scss";
+@import "blocks/header.scss";
