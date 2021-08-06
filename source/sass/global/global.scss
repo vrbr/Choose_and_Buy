@@ -16,6 +16,22 @@ body {
     background-color: #fff;
     color: #000;
 }
+main {
+    margin-top: -20px;
+}
+.button {
+    text-transform: uppercase;
+    background-color: $yellow;
+    color: #fff;
+    font-family: 'Manrope', Arial, sans-serif;
+    border: 0;
+    outline: none;
+}
+@media (min-width: $tablet-width) {
+    main {
+        margin-top: 0;
+    }
+}
 @media (max-width: $desktop-width - 1px) {
     aside {
         display: none;
