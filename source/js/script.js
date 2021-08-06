@@ -14,3 +14,14 @@ navToggle.addEventListener('click', function() {
         navMain.classList.remove('main-nav--opened');
     }
 });
+
+//swiper
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
