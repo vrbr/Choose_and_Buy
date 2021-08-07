@@ -92,8 +92,11 @@
 @media (min-width: $desktop-width) {
     .intro {
         &__wrapper {
-            height: 519px;
+            height: 511px;
             padding-bottom: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-top: 17px;
         }
         &__title {
             font-weight: 800;

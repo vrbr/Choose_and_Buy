@@ -1,12 +1,6 @@
-.main {
-    &__news,
-    &__stock {
-        width: 100vw;
-    }
-}
 .news {
     &__title {
-        padding-left: 20px;
+        padding-left: 7.5%;
         height: 45px;
         background-color: #000;
         h2 {
@@ -24,7 +18,7 @@
 .stock {
     &__title {
         position: relative;
-        padding-left: 20px;
+        padding-left: 7.5%;
         height: 45px;
         background-color: #000;
         &::before {
@@ -52,5 +46,103 @@
     }
     &__swiper {
         margin-bottom: 37px;
+    }
+}
+@media (min-width: $tablet-width) {
+    .news {
+        &__title {
+            margin-top: 30px;
+            padding-left: 30px;
+            height: 55px;
+            h2 {
+                padding-top: 16px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .stock {
+        &__title {
+            margin-top: 30px;
+            padding-left: 30px;
+            height: 55px;
+            &::before {
+                background: url("../../img/main/honey-decor-tab@1x.png") no-repeat;
+                width: 146px;
+                height: 90px;
+            }
+            @media (min-resolution: 2dppx) {
+                &::before {
+                    background: url("../../img/main/honey-decor-tab@2x.png") no-repeat;
+                    background-size: 146px 90px;
+                }
+            }
+            h2 {
+                padding-top: 16px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+@media (min-width: $tablet-width) {
+    .news {
+        &__title {
+            padding-left: 50px;
+            h2 {
+                padding-top: 14px;
+                font-size: 20px;
+            }
+        }
+    }
+    .stock {
+        &__title {
+            padding-left: 50px;
+            h2 {
+                padding-top: 14px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (min-width: $desktop-width) {
+    .news {
+        &__swiper {
+            margin-bottom: 45px;
+        }
+        &__title {
+            margin-top: 0;
+            margin-right: 50px;
+            height: 81px;
+            border-radius: 0px 10px 10px 0px;
+            h2 {
+                padding-top: 18px;
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+    .stock {
+        &__title {
+            margin-right: 50px;
+            height: 81px;
+            border-radius: 0px 10px 10px 0px;
+            &::before {
+                background: url("../../img/main/honey-decor-desk@1x.png") no-repeat;
+                width: 221px;
+                height: 135px;
+            }
+            @media (min-resolution: 2dppx) {
+                &::before {
+                    background: url("../../img/main/honey-decor-desk@2x.png") no-repeat;
+                    background-size: 221px 135px;
+                }
+            }
+            h2 {
+                padding-top: 18px;
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
     }
 }
