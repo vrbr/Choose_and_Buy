@@ -32,7 +32,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 110px 14px 65px;
+            padding: 39px 110px 36px 65px;;
         }
         &-desk__callphone {
             display: flex;
@@ -42,14 +42,8 @@
                 color: $yellow;
             }
         }
-        &-desk__social {
-            display: flex;
-            flex-direction: column;
-        }
-        &-desk__list {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 14px;
+        &-desk__logo {
+            padding-top: 6px;
         }
         &-desk__location {
             display: flex;
@@ -67,6 +61,41 @@
             right: 40px;
             width: 32px;
             height: 18px;
+        }
+    }
+}
+@media (min-width: $desktop-width) {
+    .footer {
+        width: calc(100vw - 300px);
+        &-desk__wrapper {
+            padding: 39px 128px 24px 56px;
+        }
+        height: 131px;
+        &-desk__callphone {
+            svg {
+                width: 25px;
+                height: 25px;
+            }
+            span {
+                font-size: 22px;
+                font-weight: 34px;
+            }
+        }
+        &-desk__logo {
+            img {
+                width: 225px;
+                height: 57px;
+            }
+        }
+        &-desk__location {
+            svg {
+                width: 20px;
+                height: 26px;
+            }
+            span {
+                font-size: 22px;
+                font-weight: 34px;
+            }
         }
     }
 }
