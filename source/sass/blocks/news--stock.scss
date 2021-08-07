@@ -1,0 +1,56 @@
+.main {
+    &__news,
+    &__stock {
+        width: 100vw;
+    }
+}
+.news {
+    &__title {
+        padding-left: 20px;
+        height: 45px;
+        background-color: #000;
+        h2 {
+            padding-top: 11px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff;
+        }
+    }
+    &__swiper {
+        margin-bottom: 37px;
+    }
+}
+.stock {
+    &__title {
+        position: relative;
+        padding-left: 20px;
+        height: 45px;
+        background-color: #000;
+        &::before {
+            position: absolute;
+            content: "";
+            background: url("../../img/main/honey-decor-mob@1x.png") no-repeat;
+            width: 95px;
+            height: 59px;
+            top: 0;
+            right: 0;
+        }
+        @media (min-resolution: 2dppx) {
+            &::before {
+                background: url("../../img/main/honey-decor-mob@2x.png") no-repeat;
+                background-size: 95px 59px;
+            }
+        }
+        h2 {
+            padding-top: 11px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff;
+        }
+    }
+    &__swiper {
+        margin-bottom: 37px;
+    }
+}
