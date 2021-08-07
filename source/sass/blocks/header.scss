@@ -74,6 +74,7 @@
     .header-desk {
         display: block;
         position: relative;
+        width: calc(100vw - 300px);
         &__wrapper {
             height: 110px;
             background-color: #fff;

@@ -75,6 +75,9 @@ main {
     body {
         grid-template-columns: 300px 1fr;
     }
+    main {
+        width: calc(100vw - 300px);
+    }
     aside {
         width: 300px;
     }

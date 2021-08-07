@@ -1,0 +1,101 @@
+.footer {
+    height: 110px;
+    background-color: #000;
+    &-mob__wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 110px;
+        justify-content: space-between;
+        padding: 17px 18% 15px 19%;
+    }
+    &-mob__logo-link {
+        text-align: center;
+    }
+    &-mob__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.footer-desk__wrapper,
+.footer-desk__up {
+    display: none;
+}
+@media (min-width: $tablet-width) {
+    .footer-mob__wrapper {
+        display: none;
+    }
+    .footer {
+        position: relative;
+        height: 120px;
+        &-desk__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 39px 110px 36px 65px;;
+        }
+        &-desk__callphone {
+            display: flex;
+            span {
+                display: block;
+                padding-left: 7px;
+                color: $yellow;
+            }
+        }
+        &-desk__logo {
+            padding-top: 6px;
+        }
+        &-desk__location {
+            display: flex;
+            span {
+                display: block;
+                padding-left: 7px;
+                color: $yellow;
+            }
+        }
+        &-desk__up {
+            position: absolute;
+            content: "";
+            display: block;
+            bottom: 49px;
+            right: 40px;
+            width: 32px;
+            height: 18px;
+        }
+    }
+}
+@media (min-width: $desktop-width) {
+    .footer {
+        width: calc(100vw - 300px);
+        &-desk__wrapper {
+            padding: 39px 128px 24px 56px;
+        }
+        height: 131px;
+        &-desk__callphone {
+            svg {
+                width: 25px;
+                height: 25px;
+            }
+            span {
+                font-size: 22px;
+                font-weight: 34px;
+            }
+        }
+        &-desk__logo {
+            img {
+                width: 225px;
+                height: 57px;
+            }
+        }
+        &-desk__location {
+            svg {
+                width: 20px;
+                height: 26px;
+            }
+            span {
+                font-size: 22px;
+                font-weight: 34px;
+            }
+        }
+    }
+}
