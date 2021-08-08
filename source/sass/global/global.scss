@@ -40,6 +40,29 @@ aside {
     main {
         margin-top: 0;
     }
+    .body-catalog {
+        grid-template-columns: 215px 1fr;
+        grid-template-areas: "header_catalog header_catalog"
+        "aside_catalog main_catalog"
+        "footer_catalog footer_catalog";
+    }
+    .header, .header-desk-catalog {
+        grid-area: header_catalog;
+        width: 100vw;
+    }
+    .main-catalog {
+        grid-area: main_catalog;
+        width: calc(100vw - 215px);
+    }
+    .aside-catalog {
+        display: block;
+        grid-area: aside_catalog;
+        width: 215px;
+    }
+    .footer-catalog {
+        grid-area: footer_catalog;
+        width: 100vw;
+    }
 }
 @media (max-width: $desktop-width - 1px) {
     aside {
@@ -47,20 +70,21 @@ aside {
     }
 }
 @media (min-width: $desktop-width) {
-    body {
-        grid-template-columns: 285px repeat(3, 1fr);
-        grid-template-areas: "aside header header header" "aside main main main" "aside footer footer footer";
+    .body-index {
+        grid-template-columns: 285px 1fr;
+        grid-template-areas: "aside header" "aside main " "aside footer";
         height: auto;
     }
-    header {
+    .header-index {
         grid-area: header;
+        width: calc(100vw - 285px);
     }
-    main {
+    .main-index {
         grid-area: main;
         width: calc(100vw - 285px);
         z-index: 1;
     }
-    aside {
+    .aside-index {
         display: block;
         grid-area: aside;
         position: fixed;
@@ -70,19 +94,50 @@ aside {
         background-color: #000;
         z-index: 1;
     }
-    footer {
+    .footer-index {
         grid-area: footer;
+        width: calc(100vw - 285px);
         height: 100px;
+    }
+    .body-catalog {
+        grid-template-columns: 285px 1fr;
+        grid-template-areas: "aside_catalog header_catalog"
+        "aside_catalog main_catalog"
+        "aside_catalog footer_catalog";
+    }
+    .header, .header-desk-catalog {
+        grid-area: header_catalog;
+        width: calc(100vw - 285px);
+    }
+    .main-catalog {
+        grid-area: main_catalog;
+        width: calc(100vw - 285px);
+    }
+    .aside-catalog {
+        display: block;
+        grid-area: aside_catalog;
+        width: 285px;
+    }
+    .footer-catalog {
+        grid-area: footer_catalog;
+        width: calc(100vw - 285px);
     }
 }
 @media (min-width: $fullhd-width) {
-    body {
+    .body-index,
+    .body-catalog {
         grid-template-columns: 300px 1fr;
     }
-    main {
+    .header-index,
+    .main-index,
+    .footer-index,
+    .header-desk-catalog,
+    .main-catalog,
+    .footer-catalog {
         width: calc(100vw - 300px);
     }
-    aside {
+    .aside-index,
+    .aside-catalog {
         width: 300px;
     }
 }
