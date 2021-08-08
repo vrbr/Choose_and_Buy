@@ -25,6 +25,9 @@ main {
     width: 100vw;
     margin-top: -20px;
 }
+aside {
+    display: none;
+}
 .button {
     text-transform: uppercase;
     background-color: $yellow;
@@ -58,6 +61,7 @@ main {
         z-index: 1;
     }
     aside {
+        display: block;
         grid-area: aside;
         position: fixed;
         width: 285px;
