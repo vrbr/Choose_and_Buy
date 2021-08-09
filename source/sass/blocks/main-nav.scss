@@ -23,6 +23,7 @@
             height: 2px;
             background-color: #fff;
             box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+            transition: .5s;
         }
     }
     &__toggle {
@@ -59,6 +60,7 @@
 }
 .main-nav--opened .main-nav__toggle {
     top: 22px;
+    transition: .3s;
     &::before,
     &::after {
         position: absolute;
@@ -68,6 +70,7 @@
         width: 25px;
         height: 2px;
         background-color: #fff;
+        transition: .5s;
     }
     &::before {
         transform: rotate(45deg);
