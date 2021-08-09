@@ -36,7 +36,7 @@ body {
 
 main {
     width: 100vw;
-    margin-top: -20px;
+    margin-top: 95px;
 }
 
 aside {
@@ -60,7 +60,9 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
+.no-scroll {
+    overflow: hidden;
+}
 a {
     background-color: transparent;
     text-decoration: none;
@@ -117,34 +119,28 @@ main {
     main {
         margin-top: 0;
     }
-
     .header {
         width: 100vw;
     }
-
     .body-catalog {
         grid-template-columns: 215px 1fr;
         grid-template-areas: "header_catalog header_catalog"
             "aside_catalog main_catalog"
             "footer_catalog footer_catalog";
     }
-
     .header-desk-catalog {
         grid-area: header_catalog;
         width: 100vw;
     }
-
     .main-catalog {
         grid-area: main_catalog;
         width: calc(100vw - 215px);
     }
-
     .aside-catalog {
         display: block;
         grid-area: aside_catalog;
         width: 215px;
     }
-
     .footer-catalog {
         grid-area: footer_catalog;
         width: 100vw;
