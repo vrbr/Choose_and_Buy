@@ -306,7 +306,96 @@
         </a>
     </footer>
 
+    <!--filter-->
+    <section class="section-filter popup-filter popup-filter-menu">
+        <div class="popup-filter__wrapper">
+                <div class="container section-filter__container popup-filter__inner">
+                    <h2 class="section-filter__title">Фільтр</h2>
+                    <form class="filter-form popup-filter__content popup-filter__content-fluid popup-filter__content-centered" id="filter-form" role="form">
+                        <button class="button-close-filter popup-filter__button-close popup-filter-close"></button>
+                        <div class="filter-form__wrapper-price">
+                            <h3 class="filter-form__title">Ціна</h3>
+                            <div class="filter-form__price-label">від 0 до 750 грн</div>
+                            <input type="hidden" id="min-price" name="min-price" value="0">
+                            <input type="hidden" id="max-price" name="max-price" value="750">
+                            <div id="prices" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                                <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
+                                <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                                <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                            </div>
+                        </div>
+
+                        <div class="filter-form__wrapper-category">
+                            <h3 class="filter-form__title title-category">Категорії</h3>
+                            <nav class="filter-form__nav-category">
+                                <ul class="filter-form__list">
+                                    <li class="filter-form__item is-active">
+                                        <button class="filter-form__link" type="button" data-filter="category-all">Всі товари</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="category-cases">Чохли</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="category-glass">Захисні скла</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="category-films">Плівки</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="category-powerbanks">Павербанки</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="category-charger">Зарядні пристрої</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="category-cable">Кабелі</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="category-watch">Смарт-годинники</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="category-other">Інше</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="filter-form__wrapper-model">
+                            <h3 class="filter-form__title title-model">По моделях:</h3>
+                            <nav class="filter-form__nav-model">
+                                <ul class="filter-form__list">
+                                    <li class="filter-form__item is-active">
+                                        <button class="filter-form__link" type="button" data-filter="model-all">Всі моделі</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="model-iPhone12">iPhone 12</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="model-iPhone11">iPhone 11</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="model-iPhoneX">iPhone X</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="model-iPhone8">iPhone 8</button>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__link" type="button" data-filter="model-iPhone7">iPhone 7</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </form>
+                    <div class="section-filter__buttons">
+                        <button class="button button-transparent section-filter__button-reset">Скинути</button>
+                        <button class="button section-filter__button-apply">Застосувати</button>
+                    </div>
+                </div>
+        </div>
+    </section>
+
     <script src="js/menu.js"></script>
+    <script src="js/popup-filter.js"></script>
 
     </body>
 </html>

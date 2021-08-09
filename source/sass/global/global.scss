@@ -100,6 +100,11 @@ textarea {
     font-family: 'Manrope', Arial, sans-serif;
     border: 0;
     outline: none;
+    transition: color .2s, background .2s;
+}
+.button-transparent {
+    background: transparent;
+    border: 2px solid $yellow;
 }
 
 /* progect */
